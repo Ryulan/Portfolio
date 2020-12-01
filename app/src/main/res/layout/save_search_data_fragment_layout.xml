@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SearchFragment">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/search_options"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <TextView
+        android:id="@+id/Search_txt_resSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/restaurant_search"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <TextView
+        android:id="@+id/Search_txt_hazardLvl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/hazard_level"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/Search_txt_resSearch"
+        app:layout_constraintTop_toBottomOf="@+id/Search_txt_resSearch" />
+
+    <TextView
+        android:id="@+id/Search_txt_violationsInYear"
+        android:layout_width="179dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/violations_in_last_year"
+        android:textSize="14sp"
+        app:autoSizeMaxTextSize="14dp"
+        app:autoSizeTextType="uniform"
+        app:layout_constraintStart_toStartOf="@+id/Search_txt_hazardLvl"
+        app:layout_constraintTop_toBottomOf="@+id/Search_txt_hazardLvl" />
+
+    <TextView
+        android:id="@+id/Search_txt_favourite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/favourite"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/Search_txt_violationsInYear"
+        app:layout_constraintTop_toBottomOf="@+id/Search_txt_violationsInYear" />
+
+    <Button
+        android:id="@+id/Search_btn_search"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:text="@string/search"
+        android:textSize="9sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Search_btn_cancel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/Search_btn_cancel" />
+
+    <Button
+        android:id="@+id/Search_btn_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/cancel"
+        android:textSize="9sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Search_txt_favourite" />
+
+    <Spinner
+        android:id="@+id/Search_spinner_favourite"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Search_txt_favourite"
+        app:layout_constraintStart_toEndOf="@+id/Search_txt_favourite"
+        app:layout_constraintTop_toTopOf="@+id/Search_txt_favourite" />
+
+    <Spinner
+        android:id="@+id/Search_spinner_violationsYear"
+        android:layout_width="83dp"
+        android:layout_height="39dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Search_txt_violationsInYear"
+        app:layout_constraintStart_toEndOf="@+id/Search_txt_violationsInYear"
+        app:layout_constraintTop_toTopOf="@+id/Search_txt_violationsInYear" />
+
+    <Spinner
+        android:id="@+id/Search_spinner_hazard"
+        android:layout_width="150dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/Search_txt_hazardLvl"
+        app:layout_constraintStart_toEndOf="@+id/Search_txt_hazardLvl"
+        app:layout_constraintTop_toTopOf="@+id/Search_txt_hazardLvl" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Search_txtIn_restaurantSearch"
+        android:layout_width="150dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="8dp"
+        android:hint="@string/string_to_search_for"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Search_txt_resSearch"
+        app:layout_constraintStart_toEndOf="@+id/Search_txt_resSearch"
+        app:layout_constraintTop_toTopOf="@+id/Search_txt_resSearch" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/Search_txtIn_numViolations"
+        android:layout_width="80dp"
+        android:layout_height="35dp"
+        android:hint="@string/violations"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@+id/Search_txt_violationsInYear"
+        app:layout_constraintStart_toEndOf="@+id/Search_spinner_violationsYear"
+        app:layout_constraintTop_toTopOf="@+id/Search_txt_violationsInYear" />
+
+    <Button
+        android:id="@+id/Search_btn_reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Reset"
+        android:textSize="9sp"
+        app:layout_constraintEnd_toStartOf="@+id/Search_btn_search"
+        app:layout_constraintStart_toEndOf="@+id/Search_btn_cancel"
+        app:layout_constraintTop_toTopOf="@+id/Search_btn_cancel" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

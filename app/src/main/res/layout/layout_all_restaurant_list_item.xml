@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/AllRest_img_restaurantIcon"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:maxWidth="80dp"
+        android:maxHeight="80dp"
+        app:srcCompat="@drawable/test_icon" />
+
+    <TextView
+        android:id="@+id/AllRest_txt_restaurantName"
+        android:layout_width="298dp"
+        android:layout_height="26dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="22dp"
+        android:layout_toEndOf="@+id/AllRest_img_restaurantIcon"
+        android:text="@string/name_of_restaurant"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/AllRest_txt_MostRecentInspNumIssuesAndDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="47dp"
+        android:text="@string/most_recent_insp_num_issues_and_date" />
+
+    <ImageView
+        android:id="@+id/AllRest_img_hazardIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="43dp"
+        android:maxWidth="50dp"
+        android:maxHeight="50dp"
+        app:srcCompat="@android:drawable/ic_notification_overlay" />
+
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/hazard_rating"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="9dp"
+        app:srcCompat="@drawable/high" />
+
+    <TextView
+        android:id="@+id/SingleRest_txt_date"
+        android:layout_width="336dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-6dp"
+        android:layout_toEndOf="@+id/hazard_rating"
+        android:text="@string/done_on" />
+
+    <TextView
+        android:id="@+id/SingleRest_txt_numCriticalIssues"
+        android:layout_width="337dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SingleRest_txt_date"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="-5dp"
+        android:layout_toEndOf="@+id/hazard_rating"
+        android:text="@string/critical_issues" />
+
+    <TextView
+        android:id="@+id/SingleRest_txt_numNonCriticalIssues"
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SingleRest_txt_numCriticalIssues"
+        android:layout_alignStart="@+id/SingleRest_txt_numCriticalIssues"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="3dp"
+        android:layout_toEndOf="@+id/hazard_rating"
+        android:text="@string/non_critical_issues" />
+</RelativeLayout>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SingleInspectionActivity"
+    >
+
+    <include
+        android:id="@+id/toolbarSingleInspection"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_inspectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/inspection_type"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarSingleInspection" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_inspectionDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/inspection_date_mm_dd_yyyy"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/SingleInsp_txt_inspectionName"
+        app:layout_constraintTop_toBottomOf="@+id/SingleInsp_txt_inspectionName" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_numCritIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/critical_issues"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/SingleInsp_txt_inspectionDate"
+        app:layout_constraintTop_toBottomOf="@+id/SingleInsp_txt_inspectionDate" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_numNonCritIssues"
+        android:layout_width="wrap_content"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/non_critical_issues"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/SingleInsp_txt_numCritIssues"
+        app:layout_constraintTop_toBottomOf="@+id/SingleInsp_txt_numCritIssues" />
+
+    <ImageView
+        android:id="@+id/SingleInsp_img_hazardIcon"
+        android:layout_width="79dp"
+        android:layout_height="72dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/SingleInsp_txt_numNonCritIssues"
+        app:layout_constraintTop_toBottomOf="@+id/SingleInsp_txt_numNonCritIssues"
+        app:srcCompat="@drawable/ic_baseline_warning_24" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_val_HazardLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/hazard_level"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SingleInsp_txt_hazardLevel"
+        app:layout_constraintStart_toEndOf="@+id/SingleInsp_txt_hazardLevel"
+        app:layout_constraintTop_toTopOf="@+id/SingleInsp_txt_hazardLevel"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_listViolations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/list_of_violations"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/SingleInsp_img_hazardIcon"
+        app:layout_constraintTop_toBottomOf="@+id/SingleInsp_img_hazardIcon" />
+
+    <ListView
+        android:id="@+id/SingleInsp_list_violations"
+        android:layout_width="376dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/SingleInsp_txt_listViolations"
+        app:layout_constraintTop_toBottomOf="@+id/SingleInsp_txt_listViolations" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_noViolations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="150dp"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingleInsp_txt_listViolations" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_val_inspectionType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/filler_inspection_type"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SingleInsp_txt_inspectionName"
+        app:layout_constraintStart_toEndOf="@+id/SingleInsp_txt_inspectionName"
+        app:layout_constraintTop_toTopOf="@+id/SingleInsp_txt_inspectionName" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_hazardLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:text="@string/hazard_level"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/SingleInsp_img_hazardIcon"
+        app:layout_constraintStart_toEndOf="@+id/SingleInsp_img_hazardIcon"
+        app:layout_constraintTop_toTopOf="@+id/SingleInsp_img_hazardIcon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

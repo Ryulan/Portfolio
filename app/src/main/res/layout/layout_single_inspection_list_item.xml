@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/SingleInsp_img_typeOfViolation"
+        android:layout_width="46dp"
+        android:layout_height="46dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/test_icon" />
+
+    <TextView
+        android:id="@+id/SingleInsp_txt_violationShortDesc"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:gravity="center|start"
+        android:scrollHorizontally="false"
+        android:text="@string/violation_type"
+        app:layout_constraintBottom_toBottomOf="@+id/SingleInsp_img_typeOfViolation"
+        app:layout_constraintEnd_toStartOf="@+id/SingleInsp_img_violationSeverity"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/SingleInsp_img_typeOfViolation"
+        app:layout_constraintTop_toTopOf="@+id/SingleInsp_img_typeOfViolation" />
+
+    <ImageView
+        android:id="@+id/SingleInsp_img_violationSeverity"
+        android:layout_width="41dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="4dp"
+        app:layout_constraintBottom_toBottomOf="@+id/SingleInsp_img_typeOfViolation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/SingleInsp_img_typeOfViolation"
+        app:srcCompat="@drawable/test_icon" />
+</androidx.constraintlayout.widget.ConstraintLayout>

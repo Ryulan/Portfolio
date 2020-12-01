@@ -1,0 +1,18 @@
+-------------Iteration 1-------------
+Scrum Master - Syed Naufal Mahmood
+Product Owner - Jason Hoang
+Repo Manger - Sabrina Kedzior
+Team Member - Kingsley Umeh Ogechukwu
+
+-------------Iteration 2-------------
+Scrum Master - Kingsley Umeh Ogechukwu
+Product Owner - Sabrina Kedzior
+Repo Manger - Jason Hoang
+Team Member - Syed Naufal Mahmood
+
+
+-------------Iteration 3-------------
+Scrum Master - Sabrina Kedzior
+Product Owner - Kingsley Umeh Ogechukwu
+Repo Manger - Syed Naufal Mahmood
+Team Member - Jason Hoang
